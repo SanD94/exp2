@@ -17,7 +17,7 @@ gray = (black + white)/2;
   
 
 % Setup the text type for the window
-Screen('Preference','TextEncodingLocale','UTF-8');
+Screen('Preference', 'TextEncodingLocale', 'UTF-8');
 Screen('TextFont', window, 'Consolas');  
 Screen('TextSize', window, 50);                               
 Screen('TextStyle', window, 1);
