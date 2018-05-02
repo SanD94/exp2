@@ -68,7 +68,7 @@ WriteDescription(window, 'SOL isaret parmaginizin SOL tusta ve SAG isaret parmag
 %% First part ends
 
 
-WriteDescriptions(window, 'Deneyin bu kismi sona erdi. Lutfen deney gorevlisine haber veriniz.');
+WriteDescription(window, 'Deneyin bu kismi sona erdi. Lutfen deney gorevlisine haber veriniz.');
 
 %% Second part begins 
 insightResults = InsightProblems(window, white);
