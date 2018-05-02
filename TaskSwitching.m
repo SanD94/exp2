@@ -38,11 +38,11 @@ for trial = startIndex+1:trials+startIndex
     
     % Text Output in the center of the screen
     if color(1) == 1
-        DrawFormattedText(window, 'SESSİZ', 0, 50, color);
-        DrawFormattedText(window, 'SESLİ', 'right', 50, color);
+        DrawFormattedText(window, 'SESSIZ', 0, 50, color);
+        DrawFormattedText(window, 'SESLI', 'right', 50, color);
     else
         DrawFormattedText(window, 'TEK', 0, 50, color);
-        DrawFormattedText(window, 'ÇİFT', 'right', 50, color);
+        DrawFormattedText(window, 'CIFT', 'right', 50, color);
     end
     DrawFormattedText(window, textString, 'center', 'center', color);
     start = Screen('Flip', window);
