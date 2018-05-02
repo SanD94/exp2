@@ -28,9 +28,9 @@ Screen('TextStyle', window, 1);
                               
 
 descriptions = [
-    "Bu çalışmada size 45 adet bir harf ve bir rakamdan oluşan öbekler gösterilecektir. Bu öbekler ekranın ortasında teker teker belirecektir. Devam etmek için herhangi bir tuşa basınız!",
-    "Sizin göreviniz ekranda öbekteki harf SESLİ ise SAĞdaki tuşa, harf SESSİZ ise SOLdaki tuşa basmaktır. Ekranda her bir harf belirdiği zaman, ekranın tepesinde SAĞda SESLİ ve SOLda SESSİZ yazılarını göreceksiniz. Bunlar hangi tuşa basmanızı size hatırlatmak amacıyla buraya konmuştur. Devam etmek için herhangi bir tuşa basınız!",
-    "Hazır olduğunuzda, alıştırma aşamasına geçmek için boşluk tuşuna basınız.",
+    "Bu calismada size 45 adet bir kelime ve bir rakamdan olusan obekler gosterilecektir. Bu obekler ekranin ortasinda teker teker belirecektir. Devam etmek icin herhangi bir tusa basiniz!",
+    "Sizin goreviniz ekranda obekteki harf SESLI ise SOLdaki tusa, harf SESSIZ ise SAGdaki tusa basmaktir. Ekranda her bir harf belirdigi zaman, ekranin tepesinde SOLda SESLI ve SAGda SESSIZ yazilarini goreceksiniz. Bunlar hangi tusa basmanizi size hatirlatmak amaciyla buraya konmustur. Devam etmek icin herhangi bir tusa basiniz!",
+    "Hazir oldugunuzda, alistirma asamasina gecmek icin bosluk tusuna basiniz.",
     ];
 
 WriteDescriptions(window, descriptions);
@@ -49,8 +49,8 @@ taskResults = false(2, taskTrial);
     TaskSwitching('test', 1, 0, testTrial, window);
 
 descriptions = [
-    "Alıştırmalar sona erdi. Şimdi deneyin asıl kısmına geçeceğiz. Eğer herhangi bir sorunuz varsa deney görevlisine şimdi sorunuz. Yoksa devam etmek için ya sağ ya da sol tuşuna basınız!",
-    "Lütfen sağ elinizin işaret parmağını 'sol' tuşuna ve sağ elinizin yüzük parmağını da 'sağ' tuşuna yerleştirin. Başlamak için bu iki tuştan birine basabilirsiniz!",
+    "Alistirmalar sona erdi. Simdi deneyin asil kismina gececegiz. Eger herhangi bir sorunuz varsa deney gorevlisine simdi sorunuz. Yoksa devam etmek icin ya sag ya da sol tusuna basiniz!",
+    "Lutfen sol elinizin isaret parmagini 'sol'; tusuna ve sag elinizin isaret parmagini da 'sag'; tusuna yerlestirin. Baslamak icin bu iki tustan birine basabilirsiniz!",
     ];
 
 WriteDescriptions(window, descriptions);
@@ -59,9 +59,9 @@ WriteDescriptions(window, descriptions);
     TaskSwitching('task', 1, 10, taskTrial, window);
 
 descriptions = [
-    "Bu deneyin ilk kısmı (sesli-sessiz çalışması) sona erdi. Bir sonraki çalışma için herhangi bir tuşa basınız!",
-    "Şimdiki çalışmada yine 45 tane bir harf ve bir rakamdan oluşan öbekler göreceksiniz. Bu öbekler teker teker ekranın ortasında belirecek. Sizin göreviniz eğer rakam TEK SAYI ise SOLdaki tuşa, rakam ÇİFT SAYI ise SAGdaki tuşa basmaktır. Devam etmek için bir tuşa basınız!",
-    "Bu çalışma için harflere dikkat etmenize gerek yok. Her bir sunumda TEK ve ÇİFT kelimeleri ekranın ust köşelerinde de belirecekler. Bu kelimeler size TEK SAYI için SOL ve ÇİFT SAYI için SAG tuşa basmanızı hatırlatmak için belirecek. Devam etmek için herhangi bir tuşa basınız!",
+    "Bu deneyin ilk kismi (sesli-sessiz calismasi) sona erdi. Bir sonraki calisma icin herhangi bir tusa basiniz!",
+    "Simdiki calismada yine 20 tane bir harf ve bir rakamdan olusan obekler goreceksiniz. Bu obekler teker teker ekranin ortasinda belirecek. Devam etmek icin bir tusa basiniz!",
+    "Sizin goreviniz eger rakam TEK SAYI ise SOLdaki tusa, rakam CIFT SAYI ise SAGdaki tusa basmaktir. Bu calisma icin harflere dikkat etmenize gerek yok. Her bir sunumda TEK ve CIFT kelimeleri ekranin ust koselerinde de belirecekler. Bu kelimeler size TEK SAYI icin SOL ve CIFT SAYI icin SAG tusa basmanizi hatirlatmak icin belirecek. Devam etmek icin herhangi bir tusa basiniz!",
     ];
 
 WriteDescriptions(window, descriptions);
@@ -70,8 +70,8 @@ WriteDescriptions(window, descriptions);
     TaskSwitching('test', 2, 55, testTrial, window);
 
 descriptions = [
-    "Alıştırma kısmı sona erdi. Şimdi asil deneye geçeceğiz. Herhangi bir sorunuz varsa, lütfen şimdi deney görevlisine sorunuz. Yoksa deneye başlamak için herhangi bir tuşa basınız!",
-    "SAG işaret parmağınızın SOL tuşta ve SAG yuzuk parmağınızın da SAG tuşta olması çok önemli.Lütfen parmaklarınızı yerleştirin. Deneye başlamak için SAG ya da SOL tuşuna basınız!",
+    "Alistirma kismi sona erdi. Simdi asil deneye gececegiz. Herhangi bir sorunuz varsa, lutfen simdi deney gorevlisine sorunuz. Yoksa deneye baslamak icin herhangi bir tusa basiniz!",
+    "SOL isaret parmaginizin SOL tusta ve SAG isaret parmaginizin da SAG tusta olmasi cok onemli. Lutfen parmaklarinizi yerlestirin. Deneye baslamak icin SAG ya da SOL tusuna basiniz!",
     ];
 
 WriteDescriptions(window, descriptions);
@@ -81,7 +81,7 @@ WriteDescriptions(window, descriptions);
 
 %% First part ends
 descriptions = [                             
-    "Deneyin bu kısmı sona erdi. Lütfen deney görevlisine haber veriniz."
+    "Deneyin bu kismi sona erdi. Lutfen deney gorevlisine haber veriniz."
     ];
 
 WriteDescriptions(window, descriptions);

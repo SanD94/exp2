@@ -1,12 +1,12 @@
 function results = InsightProblems(window, color)
 descriptions = [ 
-    "\nYedi yıldızı üç eşit daire çizerek birbirlerinden ayıracaksınız. Dairelerin dışında hiçbir yıldız olmayacak ve her kapalı alanda yalnız bir yıldız bulunacak.",
-    "\nKibrit çöplerinden altısının yerini değiştirerek iki kare elde ediniz.",
-    "\nFigürü, şekli ve boyutu aynı olacak biçimde 4 eşit parçaya ayırınız.",
-    "\nKaleminizi kaldırmadan 4 noktayı 2 düz çizgi ile nasıl birleştirebilirsiniz?",
-    "\nÜçgen yukarı yönü işaret etmektedir. Üç noktanın yerini değiştirerek bu üçgeni aşağı yönü işaret eder hale getiriniz.",
-    "\nTek bir çubuğun yerini değiştirerek matematiksel ifadeyi doğru hale getiriniz.",
-    "\n10 daireyi her sırada 4 daire olacak şekilde 5 sıra halinde (doğru halinde) diziniz.",
+    "\nYedi yildizi uc esit daire cizerek birbirlerinden ayiracaksiniz. Dairelerin disinda hicbir yildiz olmayacak ve her kapali alanda yalniz bir yildiz bulunacak.",
+    "\nKibrit coplerinden altisinin yerini degistirerek iki kare elde ediniz.",
+    "\nFiguru, sekli ve boyutu ayni olacak bicimde 4 esit parcaya ayiriniz.",
+    "\nKaleminizi kaldirmadan 4 noktayi 2 duz cizgi ile nasil birlestirebilirsiniz?",
+    "\nUcgen yukari yonu isaret etmektedir. uc noktanin yerini degistirerek bu ucgeni asagi yonu isaret eder hale getiriniz.",
+    "\nTek bir cubugun yerini degistirerek matematiksel ifadeyi dogru hale getiriniz.",
+    "\n10 daireyi her sirada 4 daire olacak sekilde 5 sira halinde (dogru halinde) diziniz.",
     ];
 
 nextString = 'Bitti';
