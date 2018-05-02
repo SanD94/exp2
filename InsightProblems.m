@@ -13,12 +13,13 @@ nextString = 'Bitti';
 
 ifi = Screen('GetFlipInterval', window);
 frameRate = round(1/ifi);
-presSecs = [sort(repmat(1:120, 1, frameRate), 'descend') 0];
+presSecs = [sort(repmat(1:120, 1, 15), 'descend') 0];
 
 results = zeros(length(descriptions), 1);
 
 
 sizes = size(descriptions);
+WriteDescription(window, 'Aciklamalari ekranda verilen kagittaki sorulari 120 sn icinde cozmenizi bekliyoruz. Eger cozumu erken bulursaniz herhangi bir tusa basiniz. Sure bittiginde size bir uyari gelecek ve diger soruya gecmek icin herhangi bir tusa basacaksiniz.');
 
 for i = 1:sizes(1)
     j = 1;

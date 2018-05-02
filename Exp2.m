@@ -28,7 +28,7 @@ Screen('TextStyle', window, 1);
                               
 
 WriteDescription(window, 'Bu calismada size 45 adet bir kelime ve bir rakamdan olusan obekler gosterilecektir. Bu obekler ekranin ortasinda teker teker belirecektir. Devam etmek icin herhangi bir tusa basiniz!');
-WriteDescription(window, 'Sizin goreviniz ekranda obekteki harf SESLI ise SOLdaki tusa, harf SESSIZ ise SAGdaki tusa basmaktir. Ekranda her bir harf belirdigi zaman, ekranin tepesinde SOLda SESLI ve SAGda SESSIZ yazilarini goreceksiniz. Bunlar hangi tusa basmanizi size hatirlatmak amaciyla buraya konmustur. Devam etmek icin herhangi bir tusa basiniz!');
+WriteDescription(window, 'Sizin goreviniz ekranda obekteki harf SESSIZ ise SOLdaki tusa, harf SESLI ise SAGdaki tusa basmaktir. Ekranda her bir harf belirdigi zaman, ekranin tepesinde SOLda SESSIZ ve SAGda SESLI yazilarini goreceksiniz. Bunlar hangi tusa basmanizi size hatirlatmak amaciyla buraya konmustur. Devam etmek icin herhangi bir tusa basiniz!');
 WriteDescription(window, 'Hazir oldugunuzda, alistirma asamasina gecmek icin bosluk tusuna basiniz.');
 
 
