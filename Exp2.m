@@ -1,7 +1,9 @@
+function Exp2(pNo)
+
 initPTB;
 
-testTrial = 1;
-taskTrial = 1;
+testTrial = 10;
+taskTrial = 45;
 
 
 screens = Screen('Screens');
@@ -17,12 +19,11 @@ gray = (black + white)/2;
   
 
 % Setup the text type for the window
-Screen('Preference', 'TextEncodingLocale', 'UTF-8');
 Screen('TextFont', window, 'Consolas');  
 Screen('TextSize', window, 50);                               
 Screen('TextStyle', window, 1);
 
-
+                             
 [xCenter, yCenter] = RectCenter(windowRect);
                               
 
@@ -45,7 +46,7 @@ taskTimeResults = zeros(2, taskTrial);
 taskResults = false(2, taskTrial); 
 
 [testTimeResults(1, :), testResults(1, :)] = ...
-    TaskSwitching('test', 1, testTrial, window);
+    TaskSwitching('test', 1, 0, testTrial, window);
 
 descriptions = [
     "Alıştırmalar sona erdi. Şimdi deneyin asıl kısmına geçeceğiz. Eğer herhangi bir sorunuz varsa deney görevlisine şimdi sorunuz. Yoksa devam etmek için ya sağ ya da sol tuşuna basınız!",
@@ -55,18 +56,18 @@ descriptions = [
 WriteDescriptions(window, descriptions);
       
 [taskTimeResults(1, :), taskResults(1, :)] = ...
-    TaskSwitching('task', 1, taskTrial, window);
+    TaskSwitching('task', 1, 10, taskTrial, window);
 
 descriptions = [
     "Bu deneyin ilk kısmı (sesli-sessiz çalışması) sona erdi. Bir sonraki çalışma için herhangi bir tuşa basınız!",
-    "Şimdiki çalışmada yine 20 tane bir harf ve bir rakamdan oluşan öbekler göreceksiniz. Bu öbekler teker teker ekranın ortasında belirecek. Sizin göreviniz eğer rakam TEK SAYI ise SOLdaki tuşa, rakam ÇİFT SAYI ise SAGdaki tuşa basmaktır. Devam etmek için bir tuşa basınız!",
+    "Şimdiki çalışmada yine 45 tane bir harf ve bir rakamdan oluşan öbekler göreceksiniz. Bu öbekler teker teker ekranın ortasında belirecek. Sizin göreviniz eğer rakam TEK SAYI ise SOLdaki tuşa, rakam ÇİFT SAYI ise SAGdaki tuşa basmaktır. Devam etmek için bir tuşa basınız!",
     "Bu çalışma için harflere dikkat etmenize gerek yok. Her bir sunumda TEK ve ÇİFT kelimeleri ekranın ust köşelerinde de belirecekler. Bu kelimeler size TEK SAYI için SOL ve ÇİFT SAYI için SAG tuşa basmanızı hatırlatmak için belirecek. Devam etmek için herhangi bir tuşa basınız!",
     ];
 
 WriteDescriptions(window, descriptions);
 
 [testTimeResults(2, :), testResults(2, :)] = ...
-    TaskSwitching('test', 2, testTrial, window);
+    TaskSwitching('test', 2, 55, testTrial, window);
 
 descriptions = [
     "Alıştırma kısmı sona erdi. Şimdi asil deneye geçeceğiz. Herhangi bir sorunuz varsa, lütfen şimdi deney görevlisine sorunuz. Yoksa deneye başlamak için herhangi bir tuşa basınız!",
@@ -76,9 +77,9 @@ descriptions = [
 WriteDescriptions(window, descriptions);
 
 [taskTimeResults(2, :), taskResults(2, :)] = ...
-    TaskSwitching('task', 2, taskTrial, window);
+    TaskSwitching('task', 2, 65, taskTrial, window);
 
-%% First part ends     
+%% First part ends
 descriptions = [                             
     "Deneyin bu kısmı sona erdi. Lütfen deney görevlisine haber veriniz."
     ];
@@ -89,5 +90,7 @@ WriteDescriptions(window, descriptions);
 insightResults = InsightProblems(window, white);
 %% End Code
 sca;
+                             
+save([num2str(pNo) '.mat']);
 
-save('pNo.mat');
+end

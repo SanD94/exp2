@@ -13,11 +13,11 @@ nextString = 'Bitti';
 
 ifi = Screen('GetFlipInterval', window);
 frameRate = round(1/ifi);
-presSecs = [sort(repmat(1:5, 1, frameRate), 'descend') 0];
+presSecs = [sort(repmat(1:120, 1, frameRate), 'descend') 0];
 
 results = zeros(length(descriptions), 1);
 
-length(descriptions)
+
 for i = 1:length(descriptions)
     j = 1;
     start = Screen('Flip', window);
