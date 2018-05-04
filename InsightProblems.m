@@ -1,6 +1,6 @@
 function results = InsightProblems(window, color)
 descriptions = char( ... 
-    '\n1)Ucgen yukari yonu isaret etmektedir. uc noktanin yerini degistirerek bu ucgeni asagi yonu isaret eder hale getiriniz.', ...
+    '\n1)Ucgen yukari yonu isaret etmektedir. Uc noktanin yerini degistirerek bu ucgeni asagi yonu isaret eder hale getiriniz.', ...
     '\n2)Tek bir cubugun yerini degistirerek matematiksel ifadeyi dogru hale getiriniz.', ...
     '\n3)Kaleminizi kaldirmadan 4 noktayi 2 duz cizgi ile nasil birlestirebilirsiniz?', ...
     '\n4)Kibrit coplerinden altisinin yerini degistirerek iki kare elde ediniz.', ...
@@ -11,15 +11,16 @@ descriptions = char( ...
 
 nextString = 'Bitti';
 
-ifi = Screen('GetFlipInterval', window);
-frameRate = round(1/ifi);
+% ifi = Screen('GetFlipInterval', window);
+% frameRate = round(1/ifi);
 presSecs = [sort(repmat(1:120, 1, 15), 'descend') 0];
-
-results = zeros(length(descriptions), 1);
 
 
 sizes = size(descriptions);
-WriteDescription(window, 'Aciklamalari ekranda verilen kagittaki sorulari 120 sn icinde cozmenizi bekliyoruz. Eger cozumu erken bulursaniz herhangi bir tusa basiniz. Sure bittiginde size bir uyari gelecek ve diger soruya gecmek icin herhangi bir tusa basacaksiniz.');
+results = zeros(sizes(1), 1);
+
+
+WriteDescription(window, 'Aciklamalari ekranda verilen gorevli tarafindan almaniz gereken kagittaki sorulari 120 sn icinde cozmenizi bekliyoruz. Eger cozumu erken bulursaniz herhangi bir tusa basiniz. Sure bittiginde size bir uyari gelecektir. Sorulara gecmek icin herhangi bir tusa basiniz.');
 
 for i = 1:sizes(1)
     j = 1;
